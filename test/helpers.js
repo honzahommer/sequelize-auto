@@ -34,7 +34,8 @@ module.exports = {
       logging: options.logging,
       dialect: options.dialect,
       host:    config[options.dialect].host,
-      port:    config[options.dialect].port
+      port:    config[options.dialect].port,
+      operatorsAliases: false
     }
 
     if (config[options.dialect] && config[options.dialect].storage)
